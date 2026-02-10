@@ -22,11 +22,10 @@
   <meta property="twitter:image" content="images/limitlessfitnessgym.jpeg">
 </head>
 <body>
-<!-- add a skip link that skips to the main content -->
- <header>
+ <header class="skip-link">
   <a href="#main">Skip to main content</a>
  </header>
-<!-- add correct heading levels -->
+
   <header>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
       <path d="M2 12h1"></path>
@@ -40,10 +39,17 @@
     <h1>Transform Your Life at Limitless Fitness</h1>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <a href="#">Join Now</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-    
-      src="images/facility.jpg"
+
+    <img
+        alt="Photo of Limitless Fitness Gym Facility"
+        src="images/facility.jpg"
+        srcset="
+            images/facility-S.png 404w,
+            images/facility-M.png 920w,
+            images/facility-L.png 1280w
+        "
+        sizes="80vw"
+    >
 
   </header>
   <nav>
@@ -72,7 +78,7 @@
       </section>
     </section>
     <section>
-      <h3>Our Classes</h3>
+      <h2>Our Classes</h2>
       <p>Discover a wide variety of classes designed to challenge and energize you.</p>
       <ul>
         <li>HIIT & Cardio: Boost your endurance and burn calories.</li>
@@ -81,9 +87,16 @@
         <li>Specialty Workshops: From functional training to mindfulness sessions.</li>
         <li>Check out our [Class Schedule] for times and detailed descriptions.</li>
       </ul>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
+    <img
+        alt="Photo of Limitless Fitness Gym Facility"
         src="images/classes.jpg"
+        srcset="
+            images/classes-S.png 404w,
+            images/classes-M.png 920w,
+            images/classes-L.png 1280w
+        "
+        sizes="80vw"
+    >
 
     </section>
     <section>
